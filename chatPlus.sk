@@ -1,0 +1,13 @@
+#
+#Github 
+#
+
+
+
+on chat:
+    if message contain "http":
+        cancel event
+        message formatted "[%player%'s link] &7&o<link:%message%>%message%" to all players
+        exit
+    
+    set message to coloured "%message%"
